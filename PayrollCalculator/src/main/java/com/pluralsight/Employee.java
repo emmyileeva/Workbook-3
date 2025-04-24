@@ -5,18 +5,16 @@ public class Employee {
     // Private data members (attributes)
     private int employeeId;
     private String name;
-    private double hoursWorked;
-    private double payRate;
+    private double grossPay;
 
     // Parameterized constructor
     public Employee() {}
 
     // Constructor to initialize the Employee object with values
-    public Employee(int employeeId, String name, double hoursWorked, double payRate) {
+    public Employee(int employeeId, String name, double grossPay) {
         this.employeeId = employeeId;
         this.name = name;
-        this.hoursWorked = hoursWorked;
-        this.payRate = payRate;
+        this.grossPay = grossPay;
     }
 
     // Getter and setter methods for each attribute
@@ -36,24 +34,11 @@ public class Employee {
         this.name = name;
     }
 
-    public double getHoursWorked() {
-        return hoursWorked;
-    }
-
-    public void setHoursWorked(double hoursWorked) {
-        this.hoursWorked = hoursWorked;
-    }
-
-    public double getPayRate() {
-        return payRate;
-    }
-
-    public void setPayRate(double payRate) {
-        this.payRate = payRate;
-    }
-
-    // Method to calculate the total pay for the employee
     public double getGrossPay() {
-        return hoursWorked * payRate;
+        return grossPay;
+    }
+
+    public void setGrossPay(double grossPay) {
+        this.grossPay = grossPay;
     }
 }

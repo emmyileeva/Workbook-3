@@ -31,19 +31,16 @@ public class EmployeeReader {
             while ((line = br.readLine()) != null) {
                 String[] fields = line.split("\\|");
 
-            if (fields.length == 4) {
+            if (fields.length == 3) {
                 int employeeId = Integer.parseInt(fields[0]);
                 String name = fields[1];
-                double hoursWorked = Double.parseDouble(fields[2]);
-                double payRate = Double.parseDouble(fields[3]);
+                double grossPay = Double.parseDouble(fields[2]);
 
                 // Create a new Employee object using the fields
-                Employee employee = new Employee(employeeId, name, hoursWorked, payRate);
+                Employee employee = new Employee(employeeId, name, grossPay);
 
                 // Add the employee to the list
                 employees.add(employee);
-                System.out.println("Employee added: " + employee.getName() + " with ID: " + employee.getEmployeeId());
-                System.out.println();
             }}
             // Close the reader
             br.close();

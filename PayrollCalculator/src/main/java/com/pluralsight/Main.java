@@ -1,20 +1,31 @@
 package com.pluralsight;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
 
-        // Read the employees from the CSV file and store them in a list
-        List<Employee> employees = EmployeeReader.readEmployeesFromCSV("employeeData.csv");
+        // Prompt for input file name
+        System.out.println("Enter the name of the employee file to process: ");
+        String fileName = scanner.nextLine();
 
-        // Print the employees to the console
-        for (Employee e : employees) {
-            System.out.println("Employee ID: " + e.getEmployeeId());
-            System.out.println("Employee Name: " + e.getName());
-            System.out.println("Hours Worked: " + e.getHoursWorked());
-            System.out.println("Pay Rate: " + e.getPayRate());
-            System.out.println("Gross Pay: " + e.getGrossPay());
-            System.out.println("-----------------------------");
+        // Read employees from the input file
+        List<Employee> employees = EmployeeReader.readEmployeesFromCSV(fileName);
+
+        // Prompt for output file name
+        System.out.println("Enter the name of the payroll file to create: ");
+        String outputFileName = scanner.nextLine();
+
+        // Check the output file extension
+        if (outputFileName.endsWith(".csv")) {
+            PayrollWriter.writePayrollToCSV(employees, outputFileName);
+        } else if (outputFileName.endsWith(".json")) {
+            PayrollWriter.writePayrollToJSON(employees, outputFileName);
+        } else {
+            System.out.println("Unsupported file format. Please use .csv or .json.");
         }
     }
 }
