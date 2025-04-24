@@ -43,11 +43,16 @@ This folder contains my Java exercises from Workbook 3.
   - Create and return a list of `Employee` objects
 - Main app prints each employee’s:
   - ID, name, hours worked, pay rate, and gross pay
+- **New Feature (Exercise 1 Extension)**:
+  - Prompts the user for a file to read and a filename to write the payroll report
+  - Exports payroll results to either:
+    - `.csv` file in the format `id|name|grossPay`
+    - `.json` file as an array of JSON objects (if user inputs a `.json` filename)
 - Great practice for:
-  - Reading CSV files with `BufferedReader`
-  - Splitting string data using delimiters
-  - Object-oriented programming with classes and methods
-  - Storing and accessing object data using lists
+  - Reading and writing files in different formats
+  - Prompting users for input filenames
+  - Using `BufferedWriter` or `PrintWriter` for output
+  - Formatting data for both CSV and JSON outputs
 
 ---
 
@@ -63,3 +68,6 @@ This folder contains my Java exercises from Workbook 3.
 - How to read structured data from a `.csv` file using `BufferedReader`
 - How to split data using a delimiter like `|` and convert to appropriate types
 - How to build and work with `List` collections of objects in Java
+- How to write structured output to `.csv` and `.json` formats
+- How to prompt users for file input/output paths for flexible processing
+
