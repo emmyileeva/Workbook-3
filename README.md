@@ -79,6 +79,26 @@ This folder contains my Java exercises from Workbook 3.
   - When the user exits the application
 - Uses date and time stamps in the format: `yyyy-MM-dd HH:mm:ss`
 
+### ✅ SearchInventory
+- Manages and searches product inventory using `ArrayList`
+- Loads product data from a CSV file using `BufferedReader`
+  - Each product has an ID, name, and price
+- Displays a menu to the user:
+  1. List all products (sorted by name)
+  2. Look up a product by ID
+  3. Find products within a price range
+  4. Add a new product to the list
+  5. Quit the application
+- Implements:
+  - `Product` class to represent individual products
+  - `InventoryManager` class to handle inventory operations
+  - `Store` class for the menu loop and user interaction
+- Great practice for:
+  - File input with parsing using delimiters
+  - Working with `ArrayList` and sorting collections
+  - Creating a modular program with multiple Java classes
+  - Using conditionals, loops, and menu-based interaction
+
 ---
 
 ## ✨ What I Learned
@@ -96,4 +116,6 @@ This folder contains my Java exercises from Workbook 3.
 - How to write output to files in both `.csv` and `.json` formats
 - How to format and display dates and times using different patterns and time zones
 - How to write logs with timestamps to track user actions
+- How to sort `ArrayList` items using custom `Comparator`
+- How to implement menu-driven applications for real-world scenarios
 
