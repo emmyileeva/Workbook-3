@@ -31,6 +31,24 @@ This folder contains my Java exercises from Workbook 3.
   - Numbering and printing lines for better readability
   - Handling exceptions and file-related errors
 
+### ✅ PayrollCalculator
+- Reads employee data from a CSV file using `BufferedReader`
+- Each line in the file includes:
+  - Employee ID, Name, Hours Worked, and Pay Rate
+- Builds an `Employee` class with:
+  - Fields for each piece of data
+  - `getGrossPay()` method to calculate pay based on hours and rate
+- Uses an `EmployeeReader` class to:
+  - Read and parse each line of the file
+  - Create and return a list of `Employee` objects
+- Main app prints each employee’s:
+  - ID, name, hours worked, pay rate, and gross pay
+- Great practice for:
+  - Reading CSV files with `BufferedReader`
+  - Splitting string data using delimiters
+  - Object-oriented programming with classes and methods
+  - Storing and accessing object data using lists
+
 ---
 
 ## ✨ What I Learned
@@ -42,3 +60,6 @@ This folder contains my Java exercises from Workbook 3.
 - How to make small programs more user-friendly by adding retry options and messages
 - How to read a text file line by line using `Scanner` and `FileInputStream`
 - How to break code into multiple classes for clarity and reuse
+- How to read structured data from a `.csv` file using `BufferedReader`
+- How to split data using a delimiter like `|` and convert to appropriate types
+- How to build and work with `List` collections of objects in Java
