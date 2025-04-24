@@ -54,6 +54,18 @@ This folder contains my Java exercises from Workbook 3.
   - Using `BufferedWriter` or `PrintWriter` for output
   - Formatting data for both CSV and JSON outputs
 
+### ✅ FormatDates
+- Retrieves the current date and time and displays it in several formats:
+  - `MM/dd/yyyy` → Example: `09/05/2021`
+  - `yyyy-MM-dd` → Example: `2021-09-05`
+  - `MMMM d, yyyy` → Example: `September 5, 2021`
+  - `EEEE, MMM d, yyyy HH:mm` in **GMT** → Example: `Sunday, Sep 5, 2021 10:02`
+  - `h:mm on dd-MMM-yyyy` in **local time zone** → Example: `5:02 on 05-Sep-2021`
+- Great practice for:
+  - Using `LocalDateTime`, `ZonedDateTime`, and `ZoneId`
+  - Formatting dates with `DateTimeFormatter`
+  - Displaying time in different time zones (GMT vs local)
+
 ---
 
 ## ✨ What I Learned
