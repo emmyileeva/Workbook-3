@@ -98,6 +98,19 @@ This folder contains my Java exercises from Workbook 3.
   - Working with `ArrayList` and sorting collections
   - Creating a modular program with multiple Java classes
   - Using conditionals, loops, and menu-based interaction
+ 
+### ✅ SearchInventoryMap
+- Similar to the earlier inventory app, but uses a `Map` instead of an `ArrayList`
+- Loads product data from a CSV file into a `HashMap` with the product name as the key
+- Allows users to:
+  - View a list of all available product names
+  - Search for a product by name (case-insensitive)
+  - View product details like ID and price
+- Bonus feature: lets the user keep searching as long as they answer "yes"
+- Great practice for:
+  - Using `HashMap` for fast key-based lookups
+  - Reading and parsing data from CSV files
+  - Building loop-driven user interactions with conditional logic
 
 ---
 
