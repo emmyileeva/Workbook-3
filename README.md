@@ -65,6 +65,19 @@ This folder contains my Java exercises from Workbook 3.
   - Using `LocalDateTime`, `ZonedDateTime`, and `ZoneId`
   - Formatting dates with `DateTimeFormatter`
   - Displaying time in different time zones (GMT vs local)
+  -  Great practice for:
+- Working with file writing using `FileWriter` and `BufferedWriter`
+- Using timestamps with `LocalDateTime` and `DateTimeFormatter`
+- Logging user input and actions to a text file
+- Building simple loops and conditional logic to handle user flow
+ 
+### ✅ SearchEngineLogger
+- Simulates a simple search engine with logging
+- Logs key user actions to a file named `logs.txt`:
+  - When the application is launched
+  - When a user performs a search (logs the search term)
+  - When the user exits the application
+- Uses date and time stamps in the format: `yyyy-MM-dd HH:mm:ss`
 
 ---
 
@@ -80,6 +93,7 @@ This folder contains my Java exercises from Workbook 3.
 - How to read structured data from a `.csv` file using `BufferedReader`
 - How to split data using a delimiter like `|` and convert to appropriate types
 - How to build and work with `List` collections of objects in Java
-- How to write structured output to `.csv` and `.json` formats
-- How to prompt users for file input/output paths for flexible processing
+- How to write output to files in both `.csv` and `.json` formats
+- How to format and display dates and times using different patterns and time zones
+- How to write logs with timestamps to track user actions
 
